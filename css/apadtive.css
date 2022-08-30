@@ -1,0 +1,294 @@
+@media (max-width: 1200px){
+    
+}
+@media (max-width: 992px){
+    .about__title{
+        font-size: 3.5rem;
+    }
+    .hero img{
+        max-width: 350px;
+    }
+    .icon__menu{
+        display: block;
+        height: 18px;
+        width: 30px;
+        position: relative;
+        cursor: pointer;
+        z-index: 5;
+    }
+    .icon__menu span{
+        transition: all .3s ease 0s;
+        top: calc(50% - 1px);
+        left: 0;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #000;
+    }
+    .icon__menu span:first-child{
+        top: 0;
+    }
+    .icon__menu span:last-child{
+        top: auto;
+        bottom: 0;
+    }
+    .icon__menu._active span{
+        transform: scale(0);
+    }
+    .icon__menu._active span:first-child{
+        transform: rotate(-45deg);
+        top: calc(50% - 1px);
+    }
+    .icon__menu._active span:last-child{
+        transform: rotate(45deg);
+        bottom: calc(50% - 1px);
+    }
+    .navbar ul{
+        position: absolute;
+        top: 0;
+        left: -100%;
+        margin: 0 auto;
+        text-align: center;
+        height: 100vh;
+        width: 80%;
+        display: flex;
+        background-color: rgb(109, 83, 143);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 90px;
+        overflow: auto;
+        transition: left .3s; 
+    }
+    .navbar._active ul{
+        left: 0;
+    }
+    .nav__link{
+        font-size: 2.5rem;
+    }
+    .mid__container img{
+        max-width: 300px;
+    }
+    .last__content{
+        font-size: 3rem;
+    }
+    .item__container{
+        overflow-y: scroll;
+    }
+    .subscriptions{
+        margin-top: 20px;
+        margin-bottom: 50px;
+        overflow: scroll;
+    }
+    .subscription_container{
+        border-radius: 10px;
+        width: 190px;
+        height: 280px;
+        padding: 0px 10px 20px 10px;
+        margin: 0 20px;
+        transition: all .5s ease 0s;
+    }
+    .subscription_info{
+        font-family: 'Fredoka One', cursive;
+        font-size: 1rem;
+        text-align: center;
+        color: #747477;
+    }
+    .subscription_type{
+        font-family: 'Fredoka One', cursive;
+        font-size: 24px;
+    }
+    .btn{
+        width: 150px;
+        height: 40px;
+        font-size: .6rem;
+    }
+}
+
+@media (max-width: 768px){
+    main{
+        padding-top: 70px;
+    }
+    .img__logo{
+        max-width: 150px;
+    }
+    .button{
+        width: 130px;
+        height: 40px;
+        border-radius: 8px;
+        font-size: 12px;
+    }
+    .about__title{
+        font-size: 2rem;
+    }
+    .about__text{
+        margin: 10px 0 10px 0;
+        line-height: 20px;
+        font-size: .7rem;
+    }
+    .hero img{
+        max-width: 300px;
+    }
+    .mid__container img{
+        max-width: 250px;
+    }
+    .wrap{
+        padding-right: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .mid__content{
+        font-size: 2rem;
+    }
+    .last__container{
+        margin-top: 10px;
+    }
+    .last__content{
+        font-size: 2rem;
+    }
+    .nav__link{
+        font-size: 2.2rem;
+    }
+    .button__send{
+        width: 250px;
+    }
+    
+}
+
+@media (max-width: 480px){
+    main{
+        padding-top: 60px;
+    }
+    .about__title{
+        font-size: 1.7rem;
+    }
+    .about__text{
+        line-height: 10px;
+        font-size: .5rem;
+    }
+    .button{
+        width: 70px;
+        height: 30px;
+        border-radius: 5px;
+        font-size: 8px;
+    }
+    .navbar ul{
+        gap: 60px;
+    }
+    .hero img{
+        max-width: 190px;
+    }
+    .mid__container img{
+        max-width: 160px;
+    }
+    .mid__content{
+        font-size: 1.3rem;
+        margin-bottom: 0;
+    }
+    .last__content{
+        font-size: 1.5rem;
+    }
+    .nav__link{
+        font-size: 1.5rem;
+    }
+    .email{
+        width: 150px;
+        border-radius: 5px;
+        height: 40px;
+        font-size: .7rem;
+    }
+    .button__send{
+        font-size: .7rem;
+        border-radius: 5px;
+        width: 150px;
+        height: 40px;
+    }
+    .container__footer img{
+        max-width: 150px;
+    }
+    
+
+}
+@media (max-width: 375px){
+    main{
+        padding-top: 30px;
+    }
+    .about__text{
+        line-height: 8px;
+    }
+    .about__title{
+        font-size: 1.5rem;
+    }
+    .navbar ul{
+        gap: 50px;
+    }
+    .container__info{
+        margin-top: 50px;
+    }
+    .hero img{
+        max-width: 170px;
+    }
+    .mid__container img{
+        max-width: 130px;
+    }
+    .mid__content{
+        font-size: 1rem;
+    }
+    .last__content{
+        font-size: 1.5rem;
+    }
+    .nav__link{
+        font-size: 2rem;
+    }
+    .email{
+        width: 120px;
+        height: 30px;
+        font-size: .5rem;
+    }
+    .button__send{
+        font-size: .5rem;
+        width: 120px;
+        height: 30px;
+    }
+
+}
+@media (max-width: 360px){
+    .about__text{
+        line-height: 8px;
+    }
+    .about__title{
+        font-size: 1.5rem;
+    }
+    .navbar ul{
+        gap: 50px;
+    }
+    .container__info{
+        margin-top: 40px;
+    }
+    .hero img{
+        max-width: 150px;
+    }
+    .mid__container img{
+        max-width: 120px;
+    }
+    .mid__content{
+        font-size: 1rem;
+    }
+    .last__content{
+        font-size: 1.5rem;
+    }
+    .nav__link{
+        font-size: 2rem;
+    }
+    .email{
+        width: 120px;
+        height: 30px;
+        font-size: .5rem;
+    }
+    .button__send{
+        font-size: .5rem;
+        width: 120px;
+        height: 30px;
+    }
+
+}
